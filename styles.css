@@ -53,13 +53,6 @@ header {
 .controls button {
   padding: 10px;
   cursor: pointer;
-  border: none;
-  background-color: #ccc;
-  transition: background-color 0.3s;
-}
-
-.controls button:hover {
-  background-color: #bbb;
 }
 
 main {
