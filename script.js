@@ -68,7 +68,7 @@ function setTurkishContent() {
             <li>Email: <a href="mailto:ozcanburakzafer@gmail.com">ozcanburakzafer@gmail.com</a></li>
             <li>
             Github:
-            <a href="https://github.com/burakzaferozcan">GitHub profili</a>.
+            <a href="https://github.com/burakzaferozcan">GitHub profili</a>
           </li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/burak-zafer-%C3%B6zcan-357439258/">Burak Zafer Özcan</a></li>
             <li>Adres: Özgürlük Mah. İstiklal Cad. 212 Sokak No: 37, Çayırova/Kocaeli</li>
@@ -116,7 +116,7 @@ function setEnglishContent() {
             <li>Email: <a href="mailto:ozcanburakzafer@gmail.com">ozcanburakzafer@gmail.com</a></li>
             <li>
             Github:
-            <a href="https://github.com/burakzaferozcan">GitHub profile</a>.
+            <a href="https://github.com/burakzaferozcan">GitHub profile</a>
           </li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/burak-zafer-%C3%B6zcan-357439258/">Burak Zafer Özcan</a></li>
             <li>Address: Özgürlük Mah. İstiklal Cad. 212 Sokak No: 37, Çayırova/Kocaeli</li>
