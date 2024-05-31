@@ -1,0 +1,122 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-photo {
+  border-radius: 50%;
+  max-width: 75px;
+  max-height: 75px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  text-align: left;
+  display: flex;
+  gap: 10px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.title p {
+  margin: 0;
+  font-size: 14px;
+}
+.title-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #bbb;
+}
+
+main {
+  padding: 0 0 20px 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+.dark-mode {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: #1d1d1d;
+}
+
+.dark-mode footer {
+  background-color: #1d1d1d;
+}
+.main-content {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(-30px);
+}
+
+.fade-in-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cv-download-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
