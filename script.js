@@ -29,7 +29,8 @@ toggleLanguageBtn.addEventListener("click", function () {
 });
 
 function setTurkishContent() {
-  document.getElementById("role").textContent = "Junior Full-Stack Developer";
+  document.getElementById("dowloadButton").innerText = "CV İndir";
+  document.getElementById("role").textContent = "ME[RV]N Dev";
   document.getElementById("about-me").innerHTML = `
         <h2>Hakkımda</h2>
         <p>Merhaba! Ben Burak, Kocaeli Üniversitesi Bilgisayar Programcılığı son sınıf öğrencisiyim ve ME(RV)N (MongoDB, Express, React, Vue, Node.js) Stack geliştirici olma yolunda ilerliyorum. Özellikle JavaScript teknolojilerine karşı yoğun bir ilgim ve sempatim var. Temel programlama dillerinde deneyimim var ve yazılım sektöründe kariyer yapmak için çok heyecanlıyım, öğrenmeye açığım. Github profilimde yaptığım bazı projelere göz atabilirsiniz <a href="https://github.com/burakzaferozcan">GitHub profili</a>.</p>
@@ -68,7 +69,7 @@ function setTurkishContent() {
             <li>Email: <a href="mailto:ozcanburakzafer@gmail.com">ozcanburakzafer@gmail.com</a></li>
             <li>
             Github:
-            <a href="https://github.com/burakzaferozcan">GitHub profili</a>
+            <a href="https://github.com/burakzaferozcan">Burak Zafer Özcan</a>
           </li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/burak-zafer-%C3%B6zcan-357439258/">Burak Zafer Özcan</a></li>
             <li>Adres: Özgürlük Mah. İstiklal Cad. 212 Sokak No: 37, Çayırova/Kocaeli</li>
@@ -77,7 +78,8 @@ function setTurkishContent() {
 }
 
 function setEnglishContent() {
-  document.getElementById("role").textContent = "Junior Full-Stack Developer";
+  document.getElementById("dowloadButton").innerText = "Download CV";
+  document.getElementById("role").textContent = "ME[RV]N Dev";
   document.getElementById("about-me").innerHTML = `
         <h2>About Me</h2>
         <p>Hello! I'm Burak, a final year student in Computer Programming at Kocaeli University, and I'm progressing towards becoming a ME(RV)N (MongoDB, Express, React, Vue, Node.js) Stack developer. I have a keen interest and affinity for JavaScript technologies, with experience in fundamental programming languages. I'm very excited to pursue a career in the software industry and eager to learn. You can take a look at some of the projects I've worked on in my <a href="https://github.com/burakzaferozcan">GitHub profile</a>.</p>
@@ -116,7 +118,7 @@ function setEnglishContent() {
             <li>Email: <a href="mailto:ozcanburakzafer@gmail.com">ozcanburakzafer@gmail.com</a></li>
             <li>
             Github:
-            <a href="https://github.com/burakzaferozcan">GitHub profile</a>
+            <a href="https://github.com/burakzaferozcan">Burak Zafer Özcan</a>
           </li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/burak-zafer-%C3%B6zcan-357439258/">Burak Zafer Özcan</a></li>
             <li>Address: Özgürlük Mah. İstiklal Cad. 212 Sokak No: 37, Çayırova/Kocaeli</li>

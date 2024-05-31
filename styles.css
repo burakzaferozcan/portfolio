@@ -1,17 +1,22 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
   padding: 0;
   background-color: white;
-  color: black;
+  color: #4e4e4e;
   transition: background-color 0.3s, color 0.3s;
+  max-width: 1200px;
+  margin: auto;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 header {
-  background-color: white;
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
 }
 .profile-photo {
   border-radius: 50%;
@@ -52,11 +57,23 @@ header {
 
 .controls button {
   padding: 10px;
+  cursor: pointer !important;
+  background-color: #a8a8a8;
+  border: 1px solid #a8a8a8;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.controls button:hover {
+  background-color: white;
   cursor: pointer;
+  color: #a8a8a8;
 }
 
 main {
-  padding: 0 0 20px 20px;
+  max-width: 1200px;
+  padding: 20px;
+  position: relative;
 }
 
 section {
@@ -67,9 +84,11 @@ section h2 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
 }
+.dark-mode section h2 {
+  border-bottom: 1px solid #565656;
+}
 
 footer {
-  background-color: white;
   text-align: center;
   padding: 10px;
   bottom: 0;
@@ -78,21 +97,34 @@ footer {
 
 .dark-mode {
   background-color: #1d1d1d;
-  color: white;
+  color: #b2b2b2;
+  border-right: 1px solid #565656;
+  border-left: 1px solid #565656;
 }
 
-.dark-mode header {
-  background-color: #1d1d1d;
-}
-
-.dark-mode footer {
-  background-color: #1d1d1d;
-}
 .main-content {
   opacity: 0;
   transition: opacity 0.5s;
 }
-
+.downloadButton {
+  cursor: pointer !important;
+  transition: all 0.5s;
+  background-color: #a8a8a8;
+  border: 1px solid #a8a8a8;
+  padding: 10px;
+}
+.downloadButton:hover {
+  background-color: white;
+}
+.downloadButton:hover a {
+  color: #a8a8a8 !important;
+}
+.downloadButton a {
+  cursor: pointer !important;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: white !important;
+}
 .fade-in-section {
   opacity: 0;
   transition: opacity 0.5s, transform 0.5s;
@@ -103,13 +135,37 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
-.cv-download-link {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
+a {
+  color: black;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+a:link,
+a:visited {
+  color: black;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+
+a:link:active,
+a:visited:active {
+  color: black;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+.dark-mode a {
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
+}
+.dark-mode a:link,
+.dark-mode a:visited {
+  color: white;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+
+.dark-mode a:link:active,
+.dark-mode a:visited:active {
+  color: white;
+  font-weight: bold;
+  cursor: pointer !important;
 }
