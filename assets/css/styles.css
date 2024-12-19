@@ -1,0 +1,361 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1d;
+  color: #b2b2b2;
+  transition: background-color 0.3s, color 0.3s;
+  border: 0.5px solid #4c0483bf;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.banner {
+  width: 100%;
+  height: 150px;
+  overflow: visible;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.profile-photo-container {
+  display: none;
+}
+
+.mobile-controls {
+  display: none;
+}
+
+.profile-photo {
+  border-radius: 5px;
+  width: 75px;
+  height: 75px;
+}
+
+.mobile-photo {
+  display: none;
+}
+
+.download-button-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-flex h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.title-flex p {
+  margin: 5px 0 0;
+  font-size: 1.1rem;
+}
+
+.controls button {
+  padding: 10px;
+  cursor: pointer !important;
+  background-color: #561c84;
+  border: 1px solid #561c84;
+  color: #b2b2b2;
+  font-weight: bold;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+
+.controls button:hover {
+  background-color: #4c0c7d;
+  cursor: pointer;
+  color: #b2b2b2;
+}
+
+main {
+  padding: 20px;
+  position: relative;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  border-bottom: 1px solid #4c0483bf;
+  padding-bottom: 10px;
+  font-size: 1.75rem;
+}
+
+section p,
+section li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.downloadButton {
+  cursor: pointer !important;
+  transition: all 0.5s;
+  background-color: #561c84;
+  border: 1px solid #561c84;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.downloadButton:hover {
+  transition: all 0.5s;
+  background-color: #4c0c7d;
+}
+
+.downloadButton:hover a {
+  transition: all 0.5s;
+  background-color: #4c0c7d;
+}
+
+.downloadButton a {
+  transition: all 0.5s;
+  cursor: pointer !important;
+  text-decoration: none;
+  color: #b2b2b2 !important;
+  font-size: 1rem;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s;
+}
+
+.fade-in-section.fade-in {
+  transition: all 0.5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-text {
+  color: #581c87;
+  font-weight: bold;
+}
+
+a {
+  color: #9d5bd2;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer !important;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #561c84;
+}
+
+a:link,
+a:visited {
+  color: #9d5bd2;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+
+a:link:active,
+a:visited:active {
+  color: #561c84;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+
+/* Responsive Tasarım */
+@media screen and (max-width: 1020px) {
+  body {
+    margin: 0 auto;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    margin-bottom: 100px;
+  }
+
+  .profile-photo-container {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+  }
+
+  .mobile-controls {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .mobile-controls button {
+    padding: 10px;
+    cursor: pointer !important;
+    background-color: #561c84;
+    border: 1px solid #561c84;
+    color: #b2b2b2;
+    font-weight: bold;
+    transition: all 0.5s;
+    border-radius: 3px;
+  }
+
+  .mobile-controls button:hover {
+    background-color: #4c0c7d;
+    cursor: pointer;
+    color: #b2b2b2;
+  }
+
+  .desktop-controls {
+    display: none;
+  }
+
+  .desktop-photo {
+    display: none;
+  }
+
+  .mobile-photo {
+    display: block;
+    width: 175px !important;
+    height: 175px !important;
+  }
+
+  .download-button-container {
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .title {
+    margin-top: 60px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title-flex {
+    text-align: center;
+  }
+
+  .title-flex h1 {
+    font-size: 1.5rem;
+  }
+
+  .title-flex p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  section p,
+  section li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .banner {
+    height: 120px;
+  }
+
+  .header-content {
+    padding: 15px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-flex h1 {
+    font-size: 1.2rem;
+  }
+
+  .mobile-photo {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .title-flex p {
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  section p,
+  section li {
+    font-size: 0.9rem;
+  }
+
+  .banner {
+    height: 100px;
+  }
+
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header-content {
+    padding: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .controls button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
